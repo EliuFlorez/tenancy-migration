@@ -1,0 +1,29 @@
+{
+    "name": "eliuflorez/tenancy-migration",
+    "description": "The tenancy/tenancy migration mutations",
+    "keywords": ["hooks", "tenancy", "migration"],
+    "license": "MIT",
+    "require": {
+        "eliuflorez/tenancy-framework": "*",
+        "eliuflorez/tenancy-connections": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenancy\\Hooks\\Migration\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Eliu Florez",
+            "email": "eliufz@gmail.com",
+            "homepage": "https://github.com/EliuFlorez"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tenancy\\Hooks\\Migration\\Provider"
+            ]
+        }
+    }
+}
